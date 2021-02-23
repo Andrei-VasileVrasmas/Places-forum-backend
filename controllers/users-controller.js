@@ -15,7 +15,7 @@ const getUsers = async (req, res, next) => {
     return next(error);
   }
   res.json({
-    users: users.map((user) => user.toObject({ gettters: true })),
+    users: users.map((user) => user.toObject({ getters: true })),
   });
 };
 
@@ -83,7 +83,10 @@ const login = async (req, res, next) => {
     );
     return next(error);
   }
-  res.json({ message: "Login Success" });
+  res.json({
+    message: "Login Success",
+    user: existingUser.toObject({ getters: true }),
+  });
 };
 
 exports.getUsers = getUsers;
