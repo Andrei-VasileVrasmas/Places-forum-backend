@@ -1,0 +1,9 @@
+{
+  "env": {
+    "DB_USER": "andrei",
+    "DB_PASSWORD": "andrei",
+    "DB_NAME": "database5",
+    "GOOGLE_KEY": "AIzaSyAmNzClc31a8A7Zj0XjSmQXsHb2KjBNpSQ",
+    "JWT_KEY": "secret_key_dont_share"
+  }
+}
